@@ -3,25 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React App</title>
+    <title>Davood Maeeli</title>
     <!-- Add React and ReactDOM via CDN -->
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <!-- Add Babel for JSX support -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Import App component -->
+    <script type="text/babel" src="src/App.jsx"></script>
 </head>
 <body>
     <div id="root"></div>
-    <!-- Add your custom script here -->
     <script type="text/babel">
-        const App = () => {
-            return <div>Welcome to React</div>;
-        };
-
-        ReactDOM.render(
-            <App />,
-            document.getElementById('root')
-        );
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
     </script>
 </body>
 </html>
