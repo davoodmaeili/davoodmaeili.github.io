@@ -1,16 +1,16 @@
 
 
-function Iran() {
+function Gallery({title, imageUrl}) {
   return (
     <div className="iran-container">
       <img 
-        src="https://images.pixieset.com/76813198/5dabfe51ec4d9d9607fc4b980b2a325d-cover.jpg" // Update with your actual image path
+        src={imageUrl} // Update with your actual image path
         alt="Iran landscape with people in tunnel" 
         className="hero-image"
       />
       
       <div className="content-overlay">
-        <h1 className="title">IRAN</h1>
+        <h1 className="title">{title}</h1>
         <button className="view-gallery-btn">VIEW GALLERY</button>
       </div>
       
@@ -28,4 +28,4 @@ function Iran() {
   );
 };
 
-export default Iran;
+export default Gallery;
