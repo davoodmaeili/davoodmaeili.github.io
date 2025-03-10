@@ -144,6 +144,18 @@ body {
   align-items: center;
 }
 
+.gallery-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-link:hover {
+  opacity: 0.85;
+}
+
 .image-container {
   width: 100%;
   margin-bottom: 1rem;

@@ -11,13 +11,15 @@ function App() {
           id: 1,
           title: 'IRAN',
           thumbnail: 'https://images.pixieset.com/76813198/5dabfe51ec4d9d9607fc4b980b2a325d-large.jpg',
-          category: 'documentary'
+          category: 'documentary',
+          link: 'iran.html'
         },
         {
           id: 2,
           title: 'TREMPÉ PAR LE VENT DE LA CHUTE',
           thumbnail: 'https://images.pixieset.com/20382198/2b8479815209f7f56f30b3264bd79038-large.jpg',
-          category: 'conceptual'
+          category: 'conceptual',
+          link: 'trempe-par-le-vent-de-la-chute.html'
         },
         // Add more portfolio items as needed
       ]);
@@ -78,15 +80,17 @@ function App() {
             <div className="gallery-grid">
               {images.map(image => (
                 <div key={image.id} className="gallery-item">
-                  <div className="image-container">
-                    <img 
-                      src={image.thumbnail} 
-                      alt={image.title}
-                      className="gallery-image"
-                      onContextMenu={(e) => e.preventDefault()}
-                    />
-                  </div>
-                  <h3 className="project-title">{image.title}</h3>
+                  <a href={image.link} className="gallery-link">
+                    <div className="image-container">
+                      <img 
+                        src={image.thumbnail} 
+                        alt={image.title}
+                        className="gallery-image"
+                        onContextMenu={(e) => e.preventDefault()}
+                      />
+                    </div>
+                    <h3 className="project-title">{image.title}</h3>
+                  </a>
                 </div>
               ))}
             </div>
