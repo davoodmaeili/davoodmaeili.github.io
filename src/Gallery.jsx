@@ -15,14 +15,14 @@ function Gallery({title, imageUrl,galleryPhotos}) {
         </div>
         
         <div className="photographer-info">
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <a href="/" className="photographer-header">
             <img 
               src="https://logos.pixieset.com/workspace-0324462/029e73ca8b70af9ffb87847a38b3a887-small.jpg"
               alt="Davood Maeili" 
               className="photographer-logo"
             />
             <span className="photographer-name">DAVOOD MAEILI</span>
-          </div>
+          </a>
         </div>
       </div>
 
