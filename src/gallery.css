@@ -343,16 +343,18 @@ footer {
 .footer-content p {
   margin: 5px 0;
   font-size: 14px;
-  color: #666;
+  color: #fff;
+  opacity: 0.8;
 }
 
 .footer-content a {
-  color: #333;
+  color: #fff;
   text-decoration: none;
+  transition: opacity 0.2s ease;
 }
 
 .footer-content a:hover {
-  text-decoration: underline;
+  opacity: 1;
 }
 
 .fa-heart {
