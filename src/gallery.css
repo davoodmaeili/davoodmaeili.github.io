@@ -93,6 +93,9 @@ html {
   .title {
     font-size: 3rem;
   }
+  .photographer-info {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -102,7 +105,7 @@ html {
   
   .view-gallery-btn {
     padding: 0.6rem 1.5rem;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
 }
 /* Prevent image downloads and selection */
@@ -111,7 +114,6 @@ img {
   -khtml-user-drag: none;
   -moz-user-drag: none;
   -o-user-drag: none;
-  pointer-events: none;
 }
 
 /* Gallery page styles */
@@ -191,6 +193,7 @@ img {
   width: 100%;
   overflow: hidden;
   position: relative;
+  cursor: zoom-in;
 }
 
 .gallery-photo {
@@ -198,12 +201,47 @@ img {
   height: auto;
   object-fit: cover;
   transition: transform 0.3s ease;
-  position: relative;
-  z-index: 1;
+  transform-origin: center;
+  will-change: transform;
+  pointer-events: auto !important;
+  cursor: zoom-in;
 }
 
 .gallery-photo:hover {
   transform: scale(1.02);
+}
+
+.gallery-photo.zoomed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: 0;
+  padding: 20px;
+  transform: none;
+  cursor: zoom-out;
+}
+
+/* Prevent scrolling when zoomed */
+body.has-zoomed-image {
+  overflow: hidden;
+}
+
+/* Add media query for touch devices */
+@media (hover: none) {
+  .gallery-photo:hover {
+    transform: none; /* Disable hover effect on touch devices */
+  }
+  
+  .gallery-photo-item {
+    cursor: pointer; /* Better indication for touch devices */
+  }
 }
 
 .photo-ribbon {
@@ -216,6 +254,7 @@ img {
   text-decoration: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+  z-index: 2;
 }
 
 .photo-ribbon span {
@@ -252,8 +291,8 @@ img {
   z-index: 1;
 }
 
-.photo-ribbon {
-  z-index: 2;
+.gallery-photo.zoomed {
+  z-index: 1000;
 }
 
 /* Media queries for gallery grid */

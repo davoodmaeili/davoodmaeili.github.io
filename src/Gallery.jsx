@@ -54,6 +54,10 @@ function Gallery({title, imageUrl,galleryPhotos}) {
               alt={photo.alt}
               className="gallery-photo"
               loading="lazy"
+              onClick={(e) => {
+                e.currentTarget.classList.toggle('zoomed');
+                document.body.classList.toggle('has-zoomed-image');
+              }}
             />
             <a href={`https://wa.me/+33766197937/?text=Hello, I would like to buy photo number ${photo.id} from your gallery`} className="photo-ribbon" target="_blank" rel="noopener noreferrer">
               <span>Buy</span>
