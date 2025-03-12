@@ -31,9 +31,9 @@ function App() {
     <div className="photography-app">
       <header className="app-header">
         <div className="social-links-header">
-          <a href="#" aria-label="Facebook"><i className="fa fa-facebook"></i></a>
-          <a href="#" aria-label="Instagram"><i className="fa fa-instagram"></i></a>
-          <a href="#" aria-label="LinkedIn"><i className="fa fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/d.maeili?locale=fr_FR" aria-label="Facebook"><i className="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/davood.maeili" aria-label="Instagram"><i className="fa fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/davood-maeili-274ba7b3/" aria-label="LinkedIn"><i className="fa fa-linkedin"></i></a>
         </div>
       </header>
 
@@ -64,11 +64,15 @@ function App() {
           <div className="contact-info">
             <div className="contact-item">
               <i className="fa fa-phone"></i>
-              <span>0766197937</span>
+              <a href="tel:+33766197937" aria-label="Call us">
+                <span>0766197937</span>
+              </a>
             </div>
             <div className="contact-item">
               <i className="fa fa-envelope"></i>
-              <span>d.maeili64@gmail.com</span>
+              <a href="mailto:d.maeili64@gmail.com" aria-label="Email us">
+                <span>d.maeili64@gmail.com</span>
+              </a>
             </div>
           </div>
         </section>
