@@ -11,7 +11,7 @@ function Buy({ isOpen, onClose, image }) {
     <div className="popup-overlay">
       <div className="popup-content">
         <button className="close-button" onClick={onClose}>
-          <i className="fa fa-times"></i>
+          <i className="fa fa-times" style={{ color: 'black' }}></i>
         </button>
 
         <div className="popup-image-container">
@@ -29,7 +29,7 @@ function Buy({ isOpen, onClose, image }) {
               className="size-option"
               onClick={() =>
                 window.open(
-                  `https://wa.me/+33766197937/?text=Salut, j’aimerais bien acheter la photo numéro ${
+                  `https://wa.me/+33766197937/?text=Salut, j'aimerais bien acheter la photo numéro ${
                     image.id
                   }, ${size.size}!`,
                   "_blank"
