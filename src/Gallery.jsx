@@ -55,6 +55,9 @@ function Gallery({title, imageUrl,galleryPhotos}) {
               className="gallery-photo"
               loading="lazy"
             />
+            <a href={`https://wa.me/+33766197937/?text=Hello, I would like to buy photo number ${photo.id} from your gallery`} className="photo-ribbon" target="_blank" rel="noopener noreferrer">
+              <span>Buy</span>
+            </a>
           </div>
         ))}
       </div>
