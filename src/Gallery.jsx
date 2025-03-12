@@ -23,7 +23,7 @@ function Gallery({title, imageUrl,galleryPhotos}) {
         <div className="photographer-info">
           <a href="/" className="photographer-header">
             <img 
-              src="https://logos.pixieset.com/workspace-0324462/029e73ca8b70af9ffb87847a38b3a887-small.jpg"
+              src="assets/davood.jpg"
               alt="Davood Maeili" 
               className="photographer-logo"
             />

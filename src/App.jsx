@@ -7,17 +7,10 @@ function App() {
     // Simulating API fetch
     setTimeout(() => {
       setImages([
-        // {
-        //   id: 1,
-        //   title: 'IRAN',
-        //   thumbnail: 'https://images.pixieset.com/76813198/5dabfe51ec4d9d9607fc4b980b2a325d-large.jpg',
-        //   category: 'documentary',
-        //   link: 'iran.html'
-        // },
         {
           id: 1,
           title: 'TREMPÉ PAR LE VENT DE LA CHUTE',
-          thumbnail: 'https://images.pixieset.com/20382198/2b8479815209f7f56f30b3264bd79038-large.jpg',
+          thumbnail: 'assets/cover.jpg',
           category: 'conceptual',
           link: 'trempe-par-le-vent-de-la-chute.html'
         },
@@ -48,7 +41,7 @@ function App() {
         <section className="profile-section">
           <div className="profile-image-container">
             <img 
-              src="https://logos.pixieset.com/workspace-0324462/029e73ca8b70af9ffb87847a38b3a887-small.jpg" 
+              src="assets/davood.jpg" 
               alt="Davood Maeili"
               className="profile-image"
               onContextMenu={(e) => e.preventDefault()}
