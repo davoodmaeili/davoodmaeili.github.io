@@ -7,15 +7,15 @@ function App() {
     // Simulating API fetch
     setTimeout(() => {
       setImages([
+        // {
+        //   id: 1,
+        //   title: 'IRAN',
+        //   thumbnail: 'https://images.pixieset.com/76813198/5dabfe51ec4d9d9607fc4b980b2a325d-large.jpg',
+        //   category: 'documentary',
+        //   link: 'iran.html'
+        // },
         {
           id: 1,
-          title: 'IRAN',
-          thumbnail: 'https://images.pixieset.com/76813198/5dabfe51ec4d9d9607fc4b980b2a325d-large.jpg',
-          category: 'documentary',
-          link: 'iran.html'
-        },
-        {
-          id: 2,
           title: 'TREMPÉ PAR LE VENT DE LA CHUTE',
           thumbnail: 'https://images.pixieset.com/20382198/2b8479815209f7f56f30b3264bd79038-large.jpg',
           category: 'conceptual',
