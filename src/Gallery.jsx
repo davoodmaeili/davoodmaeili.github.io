@@ -1,14 +1,12 @@
 function Gallery({ title, imageUrl, galleryPhotos }) {
-  const [isPopupOpen, setIsPopupOpen] = React.useState(true);
+  const [isPopupOpen, setIsPopupOpen] = React.useState(false);
+  const [slectedImage, setSelectedImage] = React.useState(null);
   return (
     <div>
       <Buy
         isOpen={isPopupOpen}
         onClose={() => setIsPopupOpen(false)}
-        image={{
-          thumbnail: "assets/la-chute2.jpg",
-          title: "La chute",
-        }}
+        image={slectedImage}
       />
       {/* Donation header */}
       <div className="donation-header">
@@ -95,9 +93,11 @@ function Gallery({ title, imageUrl, galleryPhotos }) {
               }}
             />
             <button
-              // href={`https://wa.me/+33766197937/?text=Hello, I would like to buy photo number ${photo.id} from your gallery`}
               className="photo-ribbon"
-              onClick={() => setIsPopupOpen(true)}
+              onClick={() => {
+                setSelectedImage(photo);
+                setIsPopupOpen(true);
+              }}
             >
               <span>Buy</span>
             </button>

@@ -16,8 +16,8 @@ function Buy({ isOpen, onClose, image }) {
 
         <div className="popup-image-container">
           <img
-            src={image.thumbnail}
-            alt={image.title}
+            src={image.src}
+            alt={image.alt}
             className="popup-image"
           />
         </div>
@@ -30,7 +30,7 @@ function Buy({ isOpen, onClose, image }) {
               onClick={() =>
                 window.open(
                   `https://wa.me/+33766197937/?text=Salut, j’aimerais bien acheter la photo numéro ${
-                    index + 1
+                    image.id
                   }, ${size.size}!`,
                   "_blank"
                 )
