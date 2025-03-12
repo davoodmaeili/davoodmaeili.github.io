@@ -24,7 +24,7 @@ function App() {
     <div>
     <div className="donation-header">
     <a href="https://revolut.me/davoodv9s6/eur5/websitedonation" target="_blank" rel="noopener noreferrer">
-      ☕️ Buy me a coffee
+      ☕️ Offrez-moi un café
     </a>
   </div>
     <div className="photography-app">
@@ -107,7 +107,7 @@ function App() {
       <footer>
         <div className="footer-content">
           <p>© DAVOOD MAEILI</p>
-          <p>Made with <i className="fa fa-heart"></i> by <a href="https://remotion.live" target="_blank" rel="noopener noreferrer">remotion.live</a></p>
+          <p>Créé avec <i className="fa fa-heart"></i> par <a href="https://remotion.live" target="_blank" rel="noopener noreferrer">remotion.live</a></p>
         </div>
       </footer>
     </div>
