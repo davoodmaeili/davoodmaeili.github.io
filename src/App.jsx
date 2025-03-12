@@ -28,7 +28,14 @@ function App() {
   }, []);
 
   return (
+    <div>
+    <div className="donation-header">
+    <a href="https://revolut.me/davoodv9s6/eur5/websitedonation" target="_blank" rel="noopener noreferrer">
+      ☕️ Buy me a coffee
+    </a>
+  </div>
     <div className="photography-app">
+
       <header className="app-header">
         <div className="social-links-header">
           <a href="https://www.facebook.com/d.maeili?locale=fr_FR" aria-label="Facebook"><i className="fa fa-facebook"></i></a>
@@ -108,6 +115,7 @@ function App() {
           <p>Made with <i className="fa fa-heart"></i> by <a href="https://remotion.live" target="_blank" rel="noopener noreferrer">remotion.live</a></p>
         </div>
       </footer>
+    </div>
     </div>
   );
 }

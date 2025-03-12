@@ -1,6 +1,12 @@
 function Gallery({title, imageUrl,galleryPhotos}) {
   return (
     <div>
+      {/* Donation header */}
+      <div className="donation-header">
+        <a href="https://revolut.me/davoodv9s6/eur5/websitedonation" target="_blank" rel="noopener noreferrer">
+          ☕️ Buy me a coffee
+        </a>
+      </div>
       {/* Hero section */}
       <div className="iran-container">
         <img 
