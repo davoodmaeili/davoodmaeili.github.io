@@ -279,3 +279,26 @@ footer {
 .donation-header a:hover {
   opacity: 1;
 }
+
+.cta-button-below {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 10px;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  line-height: 1.4;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.cta-button-below:hover {
+  background-color: #333;
+  color: white;
+}

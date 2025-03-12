@@ -93,7 +93,9 @@ function App() {
                         onContextMenu={(e) => e.preventDefault()}
                       />
                     </div>
-                    <h3 className="project-title">{image.title}</h3>
+                    <button className="cta-button-below">
+                      Voir le projet "{image.title}"
+                    </button>
                   </a>
                 </div>
               ))}
