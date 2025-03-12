@@ -34,6 +34,7 @@ function Gallery({title, imageUrl,galleryPhotos}) {
               src={photo.src} 
               alt={photo.alt}
               className="gallery-photo"
+              loading="lazy"
             />
           </div>
         ))}
