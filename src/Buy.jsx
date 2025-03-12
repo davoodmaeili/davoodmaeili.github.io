@@ -1,10 +1,10 @@
 function Buy({ isOpen, onClose, image }) {
   if (!isOpen) return null;
   const sizes = [
-    { name: "Memento", size: "10x15 cm", price: "€10" },
-    { name: "Keepsake", size: "20x30 cm", price: "€50" },
-    { name: "Heirloom", size: "30x40 cm", price: "€100" },
-    { name: "Masterpiece", size: "40x60 cm", price: "€300" },
+    { name: "Souvenir", size: "10x15 cm", price: "€10" },
+    { name: "Mémoire", size: "20x30 cm", price: "€50" },
+    { name: "Héritage", size: "30x40 cm", price: "€100" },
+    { name: "Chef-d'œuvre", size: "40x60 cm", price: "€300" },
   ];
 
   return (
