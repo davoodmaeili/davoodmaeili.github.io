@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Davood Maeeli</title>
-    <!-- Add React and ReactDOM via CDN -->
-    <script
-      src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"
-      crossorigin
-    ></script>
-    <script
-      src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"
-      crossorigin
-    ></script>
-    <!-- Add Babel for JSX support -->
-    <script src="https://unpkg.com/@babel/standalone@7.26.10/babel.min.js"></script>
-    <!-- Preload key resources -->
-    <link rel="preload" href="src/App.jsx" as="script" />
-    <link rel="preload" href="src/style.css" as="style" />
-    <!-- Import App component -->
-    <script type="text/babel" src="src/App.jsx"></script>
-    <link rel="stylesheet" href="src/style.css" />
-    <!-- Add Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="text/babel">
-      const root = ReactDOM.createRoot(document.getElementById("root"));
-      root.render(<App />);
-    </script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Davood Maeeli</title>
+  <!-- Add React and ReactDOM via CDN -->
+  <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin></script>
+  <!-- Add Babel for JSX support -->
+  <script src="https://unpkg.com/@babel/standalone@7.26.10/babel.min.js"></script>
+  <!-- Preload key resources -->
+  <link rel="preload" href="src/App.jsx" as="script" />
+  <link rel="preload" href="src/style.css" as="style" />
+  <!-- Import App component -->
+  <script type="text/babel" src="src/App.jsx"></script>
+  <link rel="stylesheet" href="src/style.css" />
+  <!-- Add Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(<App />);
+  </script>
+</body>
+
 </html>

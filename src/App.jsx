@@ -101,6 +101,13 @@ function App() {
           )}
         </section>
       </main>
+      {/* Todo another component for the footer */}
+      <footer>
+        <div className="footer-content">
+          <p>© DAVOOD MAEILI</p>
+          <p>Made with <i className="fa fa-heart"></i> by <a href="https://remotion.live" target="_blank" rel="noopener noreferrer">remotion.live</a></p>
+        </div>
+      </footer>
     </div>
   );
 }
