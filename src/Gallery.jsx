@@ -10,7 +10,7 @@ function Gallery({title, imageUrl,galleryPhotos}) {
         />
         
         <div className="content-overlay">
-          <h1 className="title">{title}</h1>
+          <h1 className="title small-title">{title}</h1>
           <a href="#gallery-section" className="view-gallery-btn">VIEW GALLERY</a>
         </div>
         

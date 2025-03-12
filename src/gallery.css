@@ -19,7 +19,7 @@ html {
 
 .hero-image {
   width: 100%;
-  height: 100%;
+  height: 800%;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -119,7 +119,7 @@ img {
 .iran-container {
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   overflow: hidden;
   margin-bottom: 2rem;
 }
@@ -267,4 +267,8 @@ footer {
 .fa-heart {
   color: #ff4d4d;
   margin: 0 3px;
+}
+
+.small-title {
+  font-size: 1.5rem; /* Adjust this value to your preferred size */
 }
